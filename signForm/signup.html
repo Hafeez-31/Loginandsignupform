@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" href="../image/logo.jpg">
+</head>
+
+<body>
+    <div class="signup-container">
+        <div class="signup-header">
+            <h1>Sign Up</h1>
+        </div>
+        <form class="signup-form">
+            <p id="msg" class="msg"></p>
+            <div class="form-group names">
+                <div class="name-field">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" placeholder="First Name">
+                </div>
+                <div class="name-field">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="emial">Email</label>
+                <input type="text" id="emailid" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="psswrd">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Password">
+                    <button type="button" id="togglePassword" class="show-btn">Show</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="psswrd">Confirm Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="confirmpassword" placeholder="Confirm Password">
+                    <button type="button" id="toggleConfirmPassword" class="show-btn">Show</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="policy">
+                    <input type="checkbox" id="policy">
+                    <p>I Agree with <span>privacy</span> and <span>policy</span></p>
+                </div>
+            </div>
+            <button type="submit" id="signup" class="signup-btn">Sign Up</button>
+        </form>
+        <div class="golog-page">
+            <p>Go to <a href="../index.html">LogIn</a> Page</p>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>
